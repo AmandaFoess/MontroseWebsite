@@ -69,8 +69,8 @@ export default function ContactForm() {
       </CardHeader>
       <CardContent>
         <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <FormField
                 control={form.control}
                 name="name"
@@ -99,7 +99,7 @@ export default function ContactForm() {
               />
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               <FormField
                 control={form.control}
                 name="email"
@@ -160,7 +160,7 @@ export default function ContactForm() {
                   <FormControl>
                     <Textarea
                       placeholder="Tell us about your project or inquiry..."
-                      className="min-h-32"
+                      className="min-h-24"
                       {...field}
                       data-testid="input-message"
                     />

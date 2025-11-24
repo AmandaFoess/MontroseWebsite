@@ -1,4 +1,3 @@
-import Hero from "@/components/Hero";
 import ContactForm from "@/components/ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
@@ -6,14 +5,16 @@ import { Mail, Phone, MapPin, Clock } from "lucide-react";
 export default function Contact() {
   return (
     <div>
-      <Hero
-        title="Contact Us"
-        subtitle="Let's discuss how we can help bring your development vision to life."
-        variant="compact"
-      />
-
-      <section className="py-16 md:py-24">
+      <section className="py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
+          {/* Page Title */}
+          <div className="text-center mb-8">
+            <h1 className="text-3xl md:text-4xl font-bold mb-3">Contact Us</h1>
+            <p className="text-lg text-muted-foreground">
+              Let's discuss how we can help bring your development vision to life.
+            </p>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Contact Form - Takes up 2/3 on desktop */}
             <div className="lg:col-span-2">
