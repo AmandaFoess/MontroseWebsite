@@ -20,10 +20,12 @@ export default function Hero({
   ctaLink = "/projects",
   variant = "full",
 }: HeroProps) {
-  const height = variant === "full" ? "h-[600px] md:h-[700px]" : "h-[400px]";
+  const height = variant === "full" ? "h-[600px] md:h-[700px]" : "h-[200px] md:h-[250px]";
+  const textColor = imageSrc ? "text-white" : "text-foreground";
+  const subtitleColor = imageSrc ? "text-white/90" : "text-muted-foreground";
 
   return (
-    <div className={`relative ${height} flex items-center justify-center overflow-hidden`}>
+    <div className={`relative ${height} flex items-center justify-center overflow-hidden ${!imageSrc ? 'bg-card' : ''}`}>
       {/* Background Image with Overlay */}
       {imageSrc && (
         <>
@@ -38,10 +40,10 @@ export default function Hero({
       
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 text-center">
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6 tracking-tight">
+        <h1 className={`text-3xl md:text-4xl lg:text-5xl font-bold ${textColor} mb-4 tracking-tight`}>
           {title}
         </h1>
-        <p className="text-lg md:text-xl lg:text-2xl text-white/90 mb-8 max-w-3xl mx-auto font-medium">
+        <p className={`text-base md:text-lg lg:text-xl ${subtitleColor} mb-6 max-w-3xl mx-auto font-medium`}>
           {subtitle}
         </p>
         {showCTA && (
