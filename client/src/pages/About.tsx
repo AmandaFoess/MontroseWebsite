@@ -1,7 +1,6 @@
 import Hero from "@/components/Hero";
 import ValueCard from "@/components/ValueCard";
 import { Award, Leaf, Lightbulb, Shield, Users, Handshake } from "lucide-react";
-import aboutHeroImage from "@assets/generated_images/about_page_team_collaboration.png";
 
 export default function About() {
   const values = [
@@ -42,7 +41,6 @@ export default function About() {
       <Hero
         title="About Montrose LLC"
         subtitle="Building Tomorrow's Communities Today"
-        imageSrc={aboutHeroImage}
         variant="compact"
       />
 
