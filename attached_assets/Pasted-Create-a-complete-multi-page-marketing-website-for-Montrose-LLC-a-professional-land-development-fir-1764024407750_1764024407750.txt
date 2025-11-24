@@ -1,0 +1,201 @@
+Create a complete multi-page marketing website for Montrose LLC, a professional land development firm.
+The site must clearly present the company’s services, showcase featured projects, and communicate the mission, history, and values of the organization.
+
+The website should include the following pages, content, and structure:
+
+🌐 Landing Page (Home)
+Hero Section
+
+Main Tagline (H1):
+Transforming Land Into Lasting Value
+
+Subheading (H3):
+We lead with data, innovation, and stakeholder alignment to deliver high-performing real estate development projects.
+
+CTA button: View Projects
+
+Our Scope of Work
+
+Section Title (H2): Our Scope of Work
+
+Section Description (H4):
+Comprehensive land development services tailored to meet the unique needs of the project.
+
+Services Preview Cards
+
+List the following service titles (no descriptions here):
+
+Land Acquisition
+
+Site Evaluation & Due Diligence
+
+Conceptual Site Planning
+
+Land Use Analysis & Rezoning
+
+Engineering & Construction Docs
+
+Permitting & Entitlements
+
+Pre-Construction
+
+Site Construction
+
+Vertical Construction
+
+Close Out
+
+CTA button: Learn More
+
+Featured Projects
+
+Section Title (H2): Featured Projects
+
+Section Description (H4):
+A showcase of our landmark developments that demonstrate our expertise and vision.
+
+Project Cards
+
+Wagner Glen — NEED DESCRIPTION
+
+The Foundry — NEED DESCRIPTION
+
+University Townes — Sustainable residential development with integrated green spaces and community facilities.
+
+Each includes a “Learn More” button.
+
+🛠 Services Page
+Hero Section
+
+Main Tagline (H1): Our Services
+
+Subheading (H3):
+Comprehensive land development services tailored to meet the unique needs of the project.
+
+Full Services List (Each with Title + Description + Icon)
+
+Land Acquisition
+Market studies/competitive market analysis, pro forma development, initial site assessment.
+
+Site Evaluation & Due Diligence
+Land suitability review, risk identification, budget estimates, project milestone creation, environmental studies, project scope statement, project requirements statement, identify stakeholders.
+
+Conceptual Site Planning
+Initial sketch plan development with roads, buildings, utilities, and stormwater based on project vision identifying.
+
+Land Use Analysis & Rezoning
+Zoning analysis, municipal coordination, community meetings/stakeholder engagement, and public hearing support to achieve successful rezoning.
+
+Engineering & Construction Docs
+Engineering plan oversight, regulatory coordination, value engineering, documentation, project specification development.
+
+Permitting & Entitlements
+Permit review tracking, agency coordination, comment resolution, and approval management.
+
+Pre-Construction
+Budget updates, contractor RFPs, proposal review, schedule alignment before construction, resource selection for work packages.
+
+Site Construction
+On-site meeting management, work tracking, issue resolution, contractor invoice review, documenting progress, ensuring work meets plans/specs.
+
+Vertical Construction
+Site visits to monitor vertical build progress and document any on-site damages.
+
+Close Out
+Permit closure, bond release, final documentation delivery, agency coordination, utility as-built coordination, public infrastructure turnover, BMP conversions.
+
+🏢 About Us Page
+Hero Section
+
+Main Tagline (H1): About Montrose LLC
+
+Subheading (H3): Building Tomorrow’s Communities Today
+
+Mission Statement
+
+Section Title (H2): Mission Statement
+
+Section Text:
+To deliver innovative and expertly managed real estate development solutions that create lasting value for our clients, communities, and stakeholders.
+
+Who We Are
+
+Section Title (H2): Who We Are
+
+Section Text (exact paragraphs):
+
+At Montrose, we offer a comprehensive range of development expertise, delivering results that are precisely tailored to each client’s unique vision. By leveraging deep industry knowledge alongside innovative, data-driven solutions, we approach every project with a focus on precision, efficiency, and maximizing value. Our collaborative mindset and commitment to quality enable us to design custom strategies that produce meaningful outcomes and enduring success.
+
+Founded in 2013, Montrose has grown thoughtfully and strategically—from a small local land development consultant to a respected regional partner. This steady evolution reflects our dedication to building strong foundations, both in the communities we serve and in our professional relationships. Our history is rooted in consistent growth guided by expertise, trust, and proven results.
+
+We have cultivated deep connections with local organizations and community stakeholders, which underpin our reputation for delivering high-quality, innovative projects. Central to our success is a disciplined project management process that drives efficiency and exceptional stakeholder satisfaction. Our unwavering commitment to excellence, collaboration, and precise execution continues to be the foundation of our lasting impact.
+
+Our Values
+
+Section Title (H2): Our Values
+
+Value Cards (Title + Description)
+
+Excellence — We strive for excellence in every aspect of our work.
+
+Sustainability — We minimize environmental impact and promote long term value.
+
+Innovation — We embrace technologies to create forward-thinking development solutions.
+
+Integrity — We uphold transparency and ethical behavior in all we do.
+
+Community — Our projects enhance and integrate with the surrounding communities.
+
+Partnership — We value collaboration with clients, contractors, and community members.
+
+📁 Projects Page
+
+Display a full list of current and past development projects using the same card style as the featured projects on the landing page.
+
+Include:
+
+Project name
+
+Location
+
+Description
+
+Status (Planned / Under Construction / Completed)
+
+Company role (e.g., Entitlement Lead, Owner’s Representative)
+
+(You may use placeholder data if real project details aren’t yet provided.)
+
+📞 Contact Page
+
+Includes:
+
+Name
+
+Company
+
+Email
+
+Phone
+
+Subject
+
+Message
+
+Company contact information section
+
+Simple confirmation message after submission (frontend only)
+
+🎯 Purpose of the Website
+
+The website must:
+
+Tell visitors who Montrose LLC is
+
+Explain the full land development lifecycle services offered
+
+Highlight real projects and capabilities
+
+Communicate the company’s history, mission, and core values
+
+Make it easy for clients, municipalities, or partners to reach out about new opportunities
