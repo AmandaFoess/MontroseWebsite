@@ -16,9 +16,16 @@ import {
   ArrowRight,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/landing_page_hero_development_aerial.png";
+import projectsData from "@/data/projects.json";
 import wagnerGlenImage from "@assets/generated_images/wagner_glen_project_showcase.png";
 import theFoundryImage from "@assets/generated_images/the_foundry_project_showcase.png";
 import universityTownesImage from "@assets/generated_images/university_townes_project_showcase.png";
+
+const imageMap: Record<string, string> = {
+  "wagner_glen_project_showcase.png": wagnerGlenImage,
+  "the_foundry_project_showcase.png": theFoundryImage,
+  "university_townes_project_showcase.png": universityTownesImage,
+};
 
 export default function Home() {
   const services = [
@@ -34,29 +41,11 @@ export default function Home() {
     { icon: CheckCircle2, title: "Close Out" },
   ];
 
-  const featuredProjects = [
-    {
-      name: "Wagner Glen",
-      location: "Charlotte, NC",
-      description: "Upscale residential development featuring modern homes with premium amenities and thoughtful community planning.",
-      imageSrc: wagnerGlenImage,
-      status: "Completed" as const,
-    },
-    {
-      name: "The Foundry",
-      location: "Raleigh, NC",
-      description: "Mixed-use urban development combining retail, residential, and community spaces in a vibrant downtown setting.",
-      imageSrc: theFoundryImage,
-      status: "Under Construction" as const,
-    },
-    {
-      name: "University Townes",
-      location: "Durham, NC",
-      description: "Sustainable residential development with integrated green spaces and community facilities.",
-      imageSrc: universityTownesImage,
-      status: "Completed" as const,
-    },
-  ];
+  const featuredProjects = projectsData.slice(0, 3).map((project) => ({
+    ...project,
+    imageSrc: imageMap[project.image] || wagnerGlenImage,
+    status: project.status as "Completed" | "Under Construction" | "Planned",
+  }));
 
   return (
     <div>
@@ -110,7 +99,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {featuredProjects.map((project) => (
-              <ProjectCard key={project.name} {...project} />
+              <ProjectCard key={project.id} {...project} />
             ))}
           </div>
 

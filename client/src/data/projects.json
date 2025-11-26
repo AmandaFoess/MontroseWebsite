@@ -1,0 +1,56 @@
+[
+  {
+    "id": "wagner-glen",
+    "name": "Wagner Glen",
+    "location": "Charlotte, NC",
+    "description": "Upscale residential development featuring modern homes with premium amenities and thoughtful community planning.",
+    "image": "wagner_glen_project_showcase.png",
+    "status": "Completed",
+    "role": "Development Lead"
+  },
+  {
+    "id": "the-foundry",
+    "name": "The Foundry",
+    "location": "Raleigh, NC",
+    "description": "Mixed-use urban development combining retail, residential, and community spaces in a vibrant downtown setting.",
+    "image": "the_foundry_project_showcase.png",
+    "status": "Under Construction",
+    "role": "Entitlement Lead"
+  },
+  {
+    "id": "university-townes",
+    "name": "University Townes",
+    "location": "Durham, NC",
+    "description": "Sustainable residential development with integrated green spaces and community facilities.",
+    "image": "university_townes_project_showcase.png",
+    "status": "Completed",
+    "role": "Owner's Representative"
+  },
+  {
+    "id": "riverside-commons",
+    "name": "Riverside Commons",
+    "location": "Greensboro, NC",
+    "description": "Master-planned community with residential and commercial components along the riverfront.",
+    "image": "wagner_glen_project_showcase.png",
+    "status": "Planned",
+    "role": "Project Manager"
+  },
+  {
+    "id": "tech-park-south",
+    "name": "Tech Park South",
+    "location": "Durham, NC",
+    "description": "Modern office park development designed for technology companies and startups.",
+    "image": "the_foundry_project_showcase.png",
+    "status": "Under Construction",
+    "role": "Development Consultant"
+  },
+  {
+    "id": "heritage-village",
+    "name": "Heritage Village",
+    "location": "Winston-Salem, NC",
+    "description": "Historic district revitalization combining preservation with modern amenities.",
+    "image": "university_townes_project_showcase.png",
+    "status": "Completed",
+    "role": "Entitlement Lead"
+  }
+]

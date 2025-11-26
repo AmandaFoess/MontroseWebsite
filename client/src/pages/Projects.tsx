@@ -2,66 +2,27 @@ import { useState } from "react";
 import Hero from "@/components/Hero";
 import ProjectCard from "@/components/ProjectCard";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import projectsData from "@/data/projects.json";
 import wagnerGlenImage from "@assets/generated_images/wagner_glen_project_showcase.png";
 import theFoundryImage from "@assets/generated_images/the_foundry_project_showcase.png";
 import universityTownesImage from "@assets/generated_images/university_townes_project_showcase.png";
 
 type ProjectStatus = "All" | "Completed" | "Under Construction" | "Planned";
 
+const imageMap: Record<string, string> = {
+  "wagner_glen_project_showcase.png": wagnerGlenImage,
+  "the_foundry_project_showcase.png": theFoundryImage,
+  "university_townes_project_showcase.png": universityTownesImage,
+};
+
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<ProjectStatus>("All");
 
-  // TODO: remove mock functionality - replace with actual data from backend
-  const projects = [
-    {
-      name: "Wagner Glen",
-      location: "Charlotte, NC",
-      description: "Upscale residential development featuring modern homes with premium amenities and thoughtful community planning.",
-      imageSrc: wagnerGlenImage,
-      status: "Completed" as const,
-      role: "Development Lead",
-    },
-    {
-      name: "The Foundry",
-      location: "Raleigh, NC",
-      description: "Mixed-use urban development combining retail, residential, and community spaces in a vibrant downtown setting.",
-      imageSrc: theFoundryImage,
-      status: "Under Construction" as const,
-      role: "Entitlement Lead",
-    },
-    {
-      name: "University Townes",
-      location: "Durham, NC",
-      description: "Sustainable residential development with integrated green spaces and community facilities.",
-      imageSrc: universityTownesImage,
-      status: "Completed" as const,
-      role: "Owner's Representative",
-    },
-    {
-      name: "Riverside Commons",
-      location: "Greensboro, NC",
-      description: "Master-planned community with residential and commercial components along the riverfront.",
-      imageSrc: wagnerGlenImage,
-      status: "Planned" as const,
-      role: "Project Manager",
-    },
-    {
-      name: "Tech Park South",
-      location: "Durham, NC",
-      description: "Modern office park development designed for technology companies and startups.",
-      imageSrc: theFoundryImage,
-      status: "Under Construction" as const,
-      role: "Development Consultant",
-    },
-    {
-      name: "Heritage Village",
-      location: "Winston-Salem, NC",
-      description: "Historic district revitalization combining preservation with modern amenities.",
-      imageSrc: universityTownesImage,
-      status: "Completed" as const,
-      role: "Entitlement Lead",
-    },
-  ];
+  const projects = projectsData.map((project) => ({
+    ...project,
+    imageSrc: imageMap[project.image] || wagnerGlenImage,
+    status: project.status as "Completed" | "Under Construction" | "Planned",
+  }));
 
   const filteredProjects = activeFilter === "All" 
     ? projects 
@@ -95,7 +56,7 @@ export default function Projects() {
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project) => (
-              <ProjectCard key={project.name} {...project} />
+              <ProjectCard key={project.id} {...project} />
             ))}
           </div>
 
