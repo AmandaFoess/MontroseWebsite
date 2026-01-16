@@ -8,7 +8,6 @@ interface ProjectCardProps {
   description: string;
   imageSrc: string;
   status?: "Planned" | "Under Construction" | "Completed";
-  role?: string;
 }
 
 export default function ProjectCard({
@@ -17,7 +16,6 @@ export default function ProjectCard({
   description,
   imageSrc,
   status = "Completed",
-  role,
 }: ProjectCardProps) {
   const statusColors = {
     Planned: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300",
@@ -48,11 +46,6 @@ export default function ProjectCard({
       </CardHeader>
       <CardContent>
         <p className="text-muted-foreground leading-relaxed">{description}</p>
-        {role && (
-          <p className="text-sm text-muted-foreground mt-4">
-            <span className="font-semibold">Role:</span> {role}
-          </p>
-        )}
       </CardContent>
     </Card>
   );
