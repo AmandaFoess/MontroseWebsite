@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="bg-card border-t border-card-border">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-2 mb-4">
@@ -15,44 +15,6 @@ export default function Footer() {
             <p className="text-sm text-muted-foreground leading-relaxed">
               Transforming land into lasting value through innovative development solutions.
             </p>
-          </div>
-
-          {/* Quick Links */}
-          <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
-            <ul className="space-y-3">
-              {["Home", "Services", "Projects", "About", "Contact"].map((item) => (
-                <li key={item}>
-                  <Link href={item === "Home" ? "/" : `/${item.toLowerCase()}`}>
-                    <span className="text-sm text-muted-foreground hover:text-primary transition-colors" data-testid={`link-footer-${item.toLowerCase()}`}>
-                      {item}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="font-semibold mb-4">Services</h3>
-            <ul className="space-y-3">
-              {[
-                "Land Acquisition",
-                "Site Evaluation",
-                "Site Planning",
-                "Permitting",
-                "Construction",
-              ].map((service) => (
-                <li key={service}>
-                  <Link href="/services">
-                    <span className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                      {service}
-                    </span>
-                  </Link>
-                </li>
-              ))}
-            </ul>
           </div>
 
           {/* Contact */}
