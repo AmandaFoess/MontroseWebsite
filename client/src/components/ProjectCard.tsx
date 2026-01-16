@@ -1,6 +1,5 @@
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
 import { MapPin } from "lucide-react";
 
 interface ProjectCardProps {
@@ -55,11 +54,6 @@ export default function ProjectCard({
           </p>
         )}
       </CardContent>
-      <CardFooter>
-        <Button variant="outline" className="w-full" data-testid={`button-learn-more-${name.toLowerCase().replace(/\s+/g, '-')}`}>
-          Learn More
-        </Button>
-      </CardFooter>
     </Card>
   );
 }
