@@ -16,8 +16,8 @@ export default function Hero({
   subtitle,
   imageSrc,
   showCTA = false,
-  ctaText = "View Projects",
-  ctaLink = "/projects",
+  ctaText = "Our Services",
+  ctaLink = "/services",
   variant = "full",
 }: HeroProps) {
   const height = variant === "full" ? "h-[600px] md:h-[700px]" : "h-[200px] md:h-[250px]";
