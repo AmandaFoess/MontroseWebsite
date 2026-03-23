@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { COMPANY } from "@/lib/constants";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -22,7 +23,7 @@ export default function Navigation() {
           {/* Logo */}
           <Link href="/" data-testid="link-home">
             <span className="text-2xl font-bold text-primary tracking-tight">
-              Montrose LLC
+              {COMPANY.name}
             </span>
           </Link>
 

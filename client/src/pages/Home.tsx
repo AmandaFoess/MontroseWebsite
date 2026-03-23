@@ -17,6 +17,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/landing_page_hero_development_aerial.png";
+import { COMPANY, ADDRESS } from "@/lib/constants";
 
 export default function Home() {
   const services: { icon: LucideIcon; title: string }[] = [
@@ -45,19 +46,19 @@ export default function Home() {
       />
 
       {/* Credibility Bar */}
-      <section className="py-6 border-b border-border">
+      <section className="py-6 bg-[hsl(210_10%_12%)]">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 text-sm text-muted-foreground">
+          <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 text-sm text-gray-200 font-medium">
             <div className="flex items-center gap-2">
               <Calendar className="h-4 w-4 text-primary" />
-              <span>Founded 2013</span>
+              <span>Founded {COMPANY.foundedYear}</span>
             </div>
-            <div className="hidden md:block w-px h-4 bg-border" />
+            <div className="hidden md:block w-px h-4 bg-gray-600" />
             <div className="flex items-center gap-2">
               <MapPin className="h-4 w-4 text-primary" />
-              <span>Charlotte, NC</span>
+              <span>{ADDRESS.display}</span>
             </div>
-            <div className="hidden md:block w-px h-4 bg-border" />
+            <div className="hidden md:block w-px h-4 bg-gray-600" />
             <div className="flex items-center gap-2">
               <TrendingUp className="h-4 w-4 text-primary" />
               <span>Full-Cycle Land Development</span>
@@ -102,7 +103,7 @@ export default function Home() {
       </section>
 
       {/* Track Record Section */}
-      <section className="py-16 md:py-24 bg-card">
+      <section className="py-16 md:py-24 bg-[hsl(162_20%_96%)]">
         <div className="max-w-5xl mx-auto px-4 md:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12">
             A Track Record of Results

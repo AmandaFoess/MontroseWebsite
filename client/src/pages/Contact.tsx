@@ -1,6 +1,7 @@
 import ContactForm from "@/components/ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
+import { CONTACT, ADDRESS } from "@/lib/constants";
 
 export default function Contact() {
   return (
@@ -35,10 +36,10 @@ export default function Contact() {
                     <div>
                       <p className="font-medium mb-1">Email</p>
                       <a
-                        href="mailto:info@montrosellc.com"
+                        href={`mailto:${CONTACT.email}`}
                         className="text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
-                        info@montrosellc.com
+                        {CONTACT.email}
                       </a>
                     </div>
                   </div>
@@ -50,10 +51,10 @@ export default function Contact() {
                     <div>
                       <p className="font-medium mb-1">Phone</p>
                       <a
-                        href="tel:+15551234567"
+                        href={CONTACT.phoneHref}
                         className="text-sm text-muted-foreground hover:text-primary transition-colors"
                       >
-                        (555) 123-4567
+                        {CONTACT.phone}
                       </a>
                     </div>
                   </div>
@@ -65,9 +66,9 @@ export default function Contact() {
                     <div>
                       <p className="font-medium mb-1">Office</p>
                       <p className="text-sm text-muted-foreground">
-                        123 Development Drive
+                        {ADDRESS.street}
                         <br />
-                        Charlotte, NC 28202
+                        {ADDRESS.full}
                       </p>
                     </div>
                   </div>

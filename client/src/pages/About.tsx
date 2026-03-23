@@ -3,6 +3,7 @@ import Hero from "@/components/Hero";
 import ValueCard from "@/components/ValueCard";
 import { Button } from "@/components/ui/button";
 import { Award, Leaf, Lightbulb, Shield, Users, Handshake, ArrowRight } from "lucide-react";
+import { COMPANY } from "@/lib/constants";
 
 export default function About() {
   const values = [
@@ -41,7 +42,7 @@ export default function About() {
   return (
     <div>
       <Hero
-        title="About Montrose LLC"
+        title={`About ${COMPANY.name}`}
         subtitle="Building Tomorrow's Communities Today"
         variant="compact"
       />
