@@ -49,10 +49,11 @@ export default function About() {
       {/* Mission Statement */}
       <section className="py-16 md:py-24">
         <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">Mission Statement</h2>
-          <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+          <h2 className="text-sm font-semibold uppercase tracking-widest text-primary mb-8">Mission Statement</h2>
+          <p className="font-serif italic text-xl md:text-2xl lg:text-3xl text-foreground leading-relaxed">
+            <span className="text-5xl md:text-6xl text-primary/30 font-serif not-italic leading-[0] align-top mr-1">&ldquo;</span>
             To deliver innovative and expertly managed real estate development solutions that create
-            lasting value for our clients, communities, and stakeholders.
+            lasting value for our clients, communities, and stakeholders.<span className="text-5xl md:text-6xl text-primary/30 font-serif not-italic leading-none inline-block translate-y-6 ml-1">&rdquo;</span>
           </p>
         </div>
       </section>
