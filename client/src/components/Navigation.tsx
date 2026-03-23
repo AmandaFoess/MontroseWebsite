@@ -32,10 +32,10 @@ export default function Navigation() {
             {navItems.map((item) => (
               <Link key={item.path} href={item.path} data-testid={`link-${item.label.toLowerCase()}`}>
                 <span
-                  className={`text-sm font-medium transition-colors hover:text-primary ${
+                  className={`relative text-sm font-medium transition-colors hover:text-primary pb-1 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:bg-primary after:transition-all after:duration-300 ${
                     isActive(item.path)
-                      ? "text-primary"
-                      : "text-muted-foreground"
+                      ? "text-primary after:w-full"
+                      : "text-muted-foreground after:w-0 hover:after:w-full"
                   }`}
                 >
                   {item.label}
