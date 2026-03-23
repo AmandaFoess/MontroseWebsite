@@ -1,3 +1,4 @@
+import SEOHead from "@/components/SEOHead";
 import PageHeader from "@/components/PageHeader";
 import ServiceCard from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
@@ -66,6 +67,11 @@ export default function Services() {
 
   return (
     <div>
+      <SEOHead
+        title="Land Development Services | Site Development Charlotte NC"
+        description="Comprehensive land development services in Charlotte, NC including land acquisition, site evaluation, rezoning, design & permitting, pre-construction, and site construction. Serving Huntersville and the greater Charlotte area."
+        canonicalPath="/services"
+      />
       <PageHeader
         title="Our Services"
         subtitle="Comprehensive land development services tailored to meet the unique needs of the project."

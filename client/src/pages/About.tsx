@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import SEOHead from "@/components/SEOHead";
 import PageHeader from "@/components/PageHeader";
 import ValueCard from "@/components/ValueCard";
 import { Button } from "@/components/ui/button";
@@ -41,6 +42,11 @@ export default function About() {
 
   return (
     <div>
+      <SEOHead
+        title="About Montrose | Land Development Company | Huntersville, NC"
+        description="Founded in 2013, Montrose is a trusted land development company in Huntersville, NC. We partner with clients to deliver innovative, data-driven real estate development solutions across the Charlotte region."
+        canonicalPath="/about"
+      />
       <PageHeader
         title={`About ${COMPANY.name}`}
         subtitle="Building Tomorrow's Communities Today"

@@ -1,3 +1,4 @@
+import SEOHead from "@/components/SEOHead";
 import ContactForm from "@/components/ContactForm";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Mail, Phone, MapPin, Clock } from "lucide-react";
@@ -6,6 +7,11 @@ import { CONTACT, ADDRESS } from "@/lib/constants";
 export default function Contact() {
   return (
     <div>
+      <SEOHead
+        title="Contact Montrose | Land Development Charlotte NC"
+        description="Contact Montrose for land development and real estate development services in Charlotte, NC. Office located in Huntersville, NC. Call (980) 828-6096 or email info@themontroseteam.com."
+        canonicalPath="/contact"
+      />
       <section className="py-12 md:py-16">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           {/* Page Title */}

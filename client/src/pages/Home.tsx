@@ -1,4 +1,5 @@
 import { Link } from "wouter";
+import SEOHead from "@/components/SEOHead";
 import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import {
@@ -34,6 +35,11 @@ export default function Home() {
 
   return (
     <div className="-mt-20 pt-20 bg-[hsl(80_6%_22%)]">
+      <SEOHead
+        title="Land Development & Real Estate Solutions"
+        description="Montrose is a full-cycle land development firm in Huntersville, NC serving the Charlotte area. From land acquisition to construction closeout, we deliver high-performing real estate development projects."
+        canonicalPath="/"
+      />
       {/* Hero Section */}
       <Hero
         title="Transforming Land Into Lasting Value"
