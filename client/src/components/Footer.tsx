@@ -4,7 +4,7 @@ import { COMPANY, CONTACT, ADDRESS, SOCIALS } from "@/lib/constants";
 
 export default function Footer() {
   return (
-    <footer className="bg-[hsl(210_10%_12%)] text-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
+    <footer className="bg-[hsl(210_10%_25%)] text-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Company Info */}

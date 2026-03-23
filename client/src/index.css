@@ -175,11 +175,23 @@
   }
 
   html {
-    background-color: hsl(210 10% 12%);
+    background-color: hsl(210 10% 25%);
   }
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .bg-topo {
+    position: relative;
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.75)),
+      url("@/assets/topo-background.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 }
 
