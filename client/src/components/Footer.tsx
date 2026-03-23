@@ -12,8 +12,15 @@ export default function Footer() {
               <Building2 className="h-6 w-6 text-primary" />
               <span className="text-xl font-bold">Montrose LLC</span>
             </div>
-            <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+            <p className="text-sm text-muted-foreground leading-relaxed mb-6">
               Full-cycle land development firm delivering high-performing real estate projects from acquisition through close out. Founded in 2013, we bring data-driven strategy and stakeholder alignment to every engagement.
+            </p>
+            <p className="text-xs text-muted-foreground/70">
+              © {new Date().getFullYear()} Montrose LLC. All rights reserved.
+              <span className="mx-2">·</span>
+              <Link href="/privacy"><span className="hover:text-primary transition-colors">Privacy Policy</span></Link>
+              <span className="mx-2">·</span>
+              <Link href="/terms"><span className="hover:text-primary transition-colors">Terms of Service</span></Link>
             </p>
           </div>
 
@@ -23,9 +30,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start gap-2 text-sm text-muted-foreground">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0" />
-                <span>
-                  Charlotte, NC
-                </span>
+                <span>Charlotte, NC</span>
               </li>
               <li className="flex items-center gap-2 text-sm text-muted-foreground">
                 <Mail className="h-4 w-4 shrink-0" />
@@ -65,25 +70,6 @@ export default function Footer() {
                 </span>
               </Link>
             </div>
-          </div>
-        </div>
-
-        {/* Bottom Bar */}
-        <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Montrose LLC. All rights reserved.
-          </p>
-          <div className="flex gap-6">
-            <Link href="/privacy">
-              <span className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Privacy Policy
-              </span>
-            </Link>
-            <Link href="/terms">
-              <span className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                Terms of Service
-              </span>
-            </Link>
           </div>
         </div>
       </div>
