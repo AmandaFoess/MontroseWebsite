@@ -1,13 +1,11 @@
 import { Link } from "wouter";
 import Hero from "@/components/Hero";
-import ServiceCard from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
 import {
   Building2,
   Search,
   Map,
   FileText,
-  Wrench,
   ClipboardCheck,
   HardHat,
   Home as HomeIcon,
@@ -16,21 +14,21 @@ import {
   Calendar,
   MapPin,
   TrendingUp,
+  type LucideIcon,
 } from "lucide-react";
 import heroImage from "@assets/generated_images/landing_page_hero_development_aerial.png";
 
 export default function Home() {
-  const services = [
-    { icon: Building2, title: "Land Acquisition", description: "Strategic identification and securing of development-ready parcels aligned with market demand." },
-    { icon: Search, title: "Site Evaluation & Due Diligence", description: "Comprehensive analysis of environmental, geotechnical, and regulatory factors before commitment." },
-    { icon: Map, title: "Conceptual Site Planning", description: "Translating project vision into preliminary layouts that maximize land use and value." },
-    { icon: FileText, title: "Land Use Analysis & Rezoning", description: "Navigating zoning requirements and entitlement processes to unlock development potential." },
-    { icon: Wrench, title: "Engineering & Construction Docs", description: "Coordinating civil, structural, and MEP engineering for permit-ready documentation." },
-    { icon: ClipboardCheck, title: "Permitting & Entitlements", description: "Managing the full permitting lifecycle from application through final approval." },
-    { icon: HardHat, title: "Pre-Construction", description: "Bid management, contractor selection, and scheduling to set projects up for success." },
-    { icon: HomeIcon, title: "Site Construction", description: "Overseeing grading, utilities, and infrastructure to prepare sites for vertical development." },
-    { icon: Building2, title: "Vertical Construction", description: "Managing the build from foundation to finish with a focus on quality and timeline." },
-    { icon: CheckCircle2, title: "Close Out", description: "Final inspections, punch lists, and turnover to ensure a seamless project completion." },
+  const services: { icon: LucideIcon; title: string }[] = [
+    { icon: Building2, title: "Land Acquisition" },
+    { icon: Search, title: "Site Evaluation & Due Diligence" },
+    { icon: Map, title: "Conceptual Site Planning" },
+    { icon: FileText, title: "Land Use Analysis & Rezoning" },
+    { icon: ClipboardCheck, title: "Design & Permitting" },
+    { icon: HardHat, title: "Pre-Construction" },
+    { icon: HomeIcon, title: "Site Construction" },
+    { icon: Building2, title: "Vertical Construction" },
+    { icon: CheckCircle2, title: "Close Out" },
   ];
 
   return (
@@ -78,12 +76,28 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
-            {services.map((service) => (
-              <ServiceCard key={service.title} icon={service.icon} title={service.title} description={service.description} />
-            ))}
+          <div className="grid grid-cols-3 gap-x-4 gap-y-8 md:gap-x-8 md:gap-y-10 mb-12">
+            {services.map((service) => {
+              const Icon = service.icon;
+              return (
+                <div key={service.title} className="flex flex-col items-center text-center">
+                  <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
+                    <Icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <span className="text-xs md:text-sm font-medium">{service.title}</span>
+                </div>
+              );
+            })}
           </div>
 
+          <div className="text-center">
+            <Link href="/services">
+              <Button size="lg" variant="outline">
+                View All Services
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

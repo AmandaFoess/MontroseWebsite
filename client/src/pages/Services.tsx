@@ -7,7 +7,6 @@ import {
   Search,
   Map,
   FileText,
-  Wrench,
   ClipboardCheck,
   HardHat,
   Home as HomeIcon,
@@ -39,14 +38,9 @@ export default function Services() {
       description: "Zoning analysis, municipal coordination, community meetings/stakeholder engagement, and public hearing support to achieve successful rezoning.",
     },
     {
-      icon: Wrench,
-      title: "Engineering & Construction Docs",
-      description: "Engineering plan oversight, regulatory coordination, value engineering, documentation, project specification development.",
-    },
-    {
       icon: ClipboardCheck,
-      title: "Permitting & Entitlements",
-      description: "Permit review tracking, agency coordination, comment resolution, and approval management.",
+      title: "Design & Permitting",
+      description: "Engineering plan oversight, value engineering, project specification development, permit review tracking, agency coordination, comment resolution, and approval management.",
     },
     {
       icon: HardHat,
