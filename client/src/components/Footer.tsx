@@ -62,7 +62,7 @@ export default function Footer() {
             <div className="mt-6">
               <Link href="/contact">
                 <span className="text-sm font-medium text-primary hover:underline transition-colors">
-                  Get in touch &rarr;
+                  Contact Us &rarr;
                 </span>
               </Link>
             </div>

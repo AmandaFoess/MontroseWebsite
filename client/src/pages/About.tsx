@@ -63,27 +63,43 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Who We Are</h2>
           <div className="space-y-8 text-lg text-muted-foreground leading-relaxed">
             <p>
-              At Montrose, we offer a comprehensive range of development expertise, delivering
-              results that are precisely tailored to each client's unique vision. By leveraging deep
-              industry knowledge alongside innovative, data-driven solutions, we approach every
-              project with a focus on precision, efficiency, and maximizing value. Our collaborative
-              mindset and commitment to quality enable us to design custom strategies that produce
-              meaningful outcomes and enduring success.
+              At Montrose, we partner with our clients to turn vision into lasting impact. We provide
+              comprehensive acquisition, entitlement and development expertise, delivering thoughtful,
+              results-driven solutions tailored to each project's unique goals. Our work is grounded
+              in the core pillars of project management—planning, execution, accountability, and
+              performance, ensuring every initiative is delivered efficiently, transparently, and with
+              measurable results.
             </p>
             <p>
-              Founded in 2013, Montrose has grown thoughtfully and strategically—from a small local
-              land development consultant to a respected regional partner. This steady evolution
-              reflects our dedication to building strong foundations, both in the communities we
-              serve and in our professional relationships. Our history is rooted in consistent growth
-              guided by expertise, trust, and proven results.
+              Founded in 2013, Montrose began as a local land development consultant and has grown
+              intentionally into a trusted regional partner. Our growth reflects more than expansion,
+              it reflects our commitment to excellence, integrity, and building strong foundations
+              within the communities we serve. Deeply rooted in our region, we maintain long-standing
+              relationships with local organizations, stakeholders, and partners who share our
+              commitment to responsible, sustainable growth.
             </p>
             <p>
-              We have cultivated deep connections with local organizations and community stakeholders,
-              which underpin our reputation for delivering high-quality, innovative projects. Central
-              to our success is a disciplined project management process that drives efficiency and
-              exceptional stakeholder satisfaction. Our unwavering commitment to excellence,
-              collaboration, and precise execution continues to be the foundation of our lasting
-              impact.
+              We combine deep industry expertise with innovative, data-driven strategies to help our
+              clients navigate complexity, reduce risk, and maximize value. Through disciplined project
+              management and collaborative partnership, we support our clients in driving revenue,
+              improving profitability, reducing risk, and achieving long-term financial performance,
+              without compromising quality, sustainability, or community impact.
+            </p>
+            <p>
+              Our work is guided by core values that shape every decision we make: excellence in
+              execution, sustainability in planning, innovation in approach, integrity in relationships,
+              and a genuine commitment to community and partnerships. These principles allow us to
+              deliver solutions that are not only effective today, but resilient for the future.
+            </p>
+            <p>
+              What truly sets Montrose apart is our ability to align vision, execution, and outcomes.
+              We believe the strongest results are achieved when strategic insight, rigorous project
+              management, and trusted partnerships come together. We measure our performance by the
+              success of all the stakeholders involved.
+            </p>
+            <p>
+              At Montrose, we don't simply manage projects, we create momentum, build trust, and help
+              our clients move forward with confidence.
             </p>
           </div>
         </div>

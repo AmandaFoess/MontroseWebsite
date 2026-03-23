@@ -70,7 +70,7 @@ export default function Home() {
       <section className="py-16 md:py-24">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Scope of Work</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto">
               Comprehensive land development services tailored to meet the unique needs of the project.
             </p>
@@ -92,8 +92,8 @@ export default function Home() {
 
           <div className="text-center">
             <Link href="/services">
-              <Button size="lg" variant="outline">
-                View All Services
+              <Button size="lg">
+                View More Details
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
@@ -128,7 +128,7 @@ export default function Home() {
           <div className="mt-12">
             <Link href="/contact">
               <Button size="lg" variant="outline" data-testid="button-get-in-touch">
-                Get In Touch
+                Contact Us
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
