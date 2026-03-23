@@ -33,7 +33,7 @@ export default function Home() {
   ];
 
   return (
-    <div>
+    <div className="-mt-20 pt-20 bg-[hsl(210_10%_12%)]">
       {/* Hero Section */}
       <Hero
         title="Transforming Land Into Lasting Value"
@@ -68,7 +68,7 @@ export default function Home() {
       </section>
 
       {/* Our Scope of Work */}
-      <section className="py-16 md:py-24">
+      <section className="py-16 md:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Expertise</h2>
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
           <div className="mt-12">
             <Link href="/contact">
-              <Button size="lg" variant="outline" data-testid="button-get-in-touch">
+              <Button size="lg" data-testid="button-get-in-touch">
                 Contact Us
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
