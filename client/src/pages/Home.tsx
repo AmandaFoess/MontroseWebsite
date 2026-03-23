@@ -41,7 +41,7 @@ export default function Home() {
         subtitle="We lead with data, innovation, and stakeholder alignment to deliver high-performing real estate development projects."
         imageSrc={heroImage}
         showCTA={true}
-        ctaText="Explore Our Work"
+        ctaText="View Our Services"
         ctaLink="/services"
         variant="full"
       />
@@ -84,14 +84,6 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="text-center">
-            <Link href="/services">
-              <Button size="lg" data-testid="button-learn-more-services">
-                Learn More
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-          </div>
         </div>
       </section>
 

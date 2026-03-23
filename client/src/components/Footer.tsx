@@ -17,10 +17,6 @@ export default function Footer() {
             </p>
             <p className="text-xs text-muted-foreground/70">
               © {new Date().getFullYear()} Montrose LLC. All rights reserved.
-              <span className="mx-2">·</span>
-              <Link href="/privacy"><span className="hover:text-primary transition-colors">Privacy Policy</span></Link>
-              <span className="mx-2">·</span>
-              <Link href="/terms"><span className="hover:text-primary transition-colors">Terms of Service</span></Link>
             </p>
           </div>
 

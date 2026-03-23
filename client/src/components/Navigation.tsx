@@ -47,7 +47,7 @@ export default function Navigation() {
           {/* CTA Button Desktop */}
           <div className="hidden md:block">
             <Link href="/contact">
-              <Button data-testid="button-get-started">Get Started</Button>
+              <Button data-testid="button-get-started">Contact Us</Button>
             </Link>
           </div>
 
@@ -88,7 +88,7 @@ export default function Navigation() {
             ))}
             <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
               <Button className="w-full" data-testid="button-mobile-get-started">
-                Get Started
+                Contact Us
               </Button>
             </Link>
           </div>
