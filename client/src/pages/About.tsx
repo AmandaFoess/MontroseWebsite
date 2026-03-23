@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import Hero from "@/components/Hero";
+import PageHeader from "@/components/PageHeader";
 import ValueCard from "@/components/ValueCard";
 import { Button } from "@/components/ui/button";
 import { Award, Leaf, Lightbulb, Shield, Users, Handshake, ArrowRight } from "lucide-react";
@@ -41,10 +41,9 @@ export default function About() {
 
   return (
     <div>
-      <Hero
+      <PageHeader
         title={`About ${COMPANY.name}`}
         subtitle="Building Tomorrow's Communities Today"
-        variant="compact"
       />
 
       {/* Mission Statement */}

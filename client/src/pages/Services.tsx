@@ -1,4 +1,4 @@
-import Hero from "@/components/Hero";
+import PageHeader from "@/components/PageHeader";
 import ServiceCard from "@/components/ServiceCard";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
@@ -66,10 +66,9 @@ export default function Services() {
 
   return (
     <div>
-      <Hero
+      <PageHeader
         title="Our Services"
         subtitle="Comprehensive land development services tailored to meet the unique needs of the project."
-        variant="compact"
       />
 
       {/* Services Grid */}
