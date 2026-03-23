@@ -18,16 +18,16 @@
   --sidebar: 210 5% 96%;
   --sidebar-foreground: 210 6% 12%;
   --sidebar-border: 210 4% 92%;
-  --sidebar-primary: 162 48% 28%;
-  --sidebar-primary-foreground: 162 45% 96%;
+  --sidebar-primary: 82 22% 40%;
+  --sidebar-primary-foreground: 82 20% 96%;
   --sidebar-accent: 210 8% 88%;
   --sidebar-accent-foreground: 210 6% 12%;
-  --sidebar-ring: 162 48% 28%;
+  --sidebar-ring: 82 22% 40%;
   --popover: 0 0% 96%;
   --popover-foreground: 210 6% 12%;
   --popover-border: 210 4% 91%;
-  --primary: 162 48% 28%;
-  --primary-foreground: 162 45% 96%;
+  --primary: 82 22% 40%;
+  --primary-foreground: 82 20% 96%;
   --secondary: 210 8% 90%;
   --secondary-foreground: 210 6% 12%;
   --muted: 210 10% 92%;
@@ -37,8 +37,8 @@
   --destructive: 0 72% 42%;
   --destructive-foreground: 0 0% 98%;
   --input: 210 8% 72%;
-  --ring: 162 48% 28%;
-  --chart-1: 162 48% 28%;
+  --ring: 82 22% 40%;
+  --chart-1: 82 22% 40%;
   --chart-2: 195 62% 32%;
   --chart-3: 210 55% 38%;
   --chart-4: 42 68% 42%;
@@ -102,16 +102,16 @@
   --sidebar: 210 6% 12%;
   --sidebar-foreground: 210 4% 96%;
   --sidebar-border: 210 5% 16%;
-  --sidebar-primary: 162 48% 28%;
-  --sidebar-primary-foreground: 162 45% 96%;
+  --sidebar-primary: 82 22% 40%;
+  --sidebar-primary-foreground: 82 20% 96%;
   --sidebar-accent: 210 8% 16%;
   --sidebar-accent-foreground: 210 4% 96%;
-  --sidebar-ring: 162 48% 28%;
+  --sidebar-ring: 82 22% 40%;
   --popover: 210 6% 14%;
   --popover-foreground: 210 4% 96%;
   --popover-border: 210 5% 18%;
-  --primary: 162 48% 28%;
-  --primary-foreground: 162 45% 96%;
+  --primary: 82 22% 40%;
+  --primary-foreground: 82 20% 96%;
   --secondary: 210 8% 18%;
   --secondary-foreground: 210 4% 96%;
   --muted: 210 10% 20%;
@@ -121,8 +121,8 @@
   --destructive: 0 72% 42%;
   --destructive-foreground: 0 0% 98%;
   --input: 210 8% 32%;
-  --ring: 162 48% 28%;
-  --chart-1: 162 55% 65%;
+  --ring: 82 22% 40%;
+  --chart-1: 82 30% 60%;
   --chart-2: 195 68% 68%;
   --chart-3: 210 62% 72%;
   --chart-4: 42 75% 72%;
@@ -170,16 +170,18 @@
     @apply border-border;
   }
 
-  html, body {
-    overflow-x: hidden;
-  }
-
   html {
-    background-color: hsl(210 10% 25%);
+    overflow: hidden;
+    height: 100%;
+    background-color: hsl(80 6% 22%);
   }
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overscroll-behavior: none;
   }
 }
 

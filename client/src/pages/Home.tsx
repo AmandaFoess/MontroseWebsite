@@ -33,7 +33,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="-mt-20 pt-20 bg-[hsl(210_10%_25%)]">
+    <div className="-mt-20 pt-20 bg-[hsl(80_6%_22%)]">
       {/* Hero Section */}
       <Hero
         title="Transforming Land Into Lasting Value"
@@ -46,7 +46,7 @@ export default function Home() {
       />
 
       {/* Credibility Bar */}
-      <section className="py-6 bg-[hsl(210_10%_25%)]">
+      <section className="py-6 bg-[hsl(80_6%_22%)]">
         <div className="max-w-7xl mx-auto px-4 md:px-8">
           <div className="flex flex-col md:flex-row items-center justify-center gap-4 md:gap-12 text-sm text-gray-200 font-medium">
             <div className="flex items-center gap-2">

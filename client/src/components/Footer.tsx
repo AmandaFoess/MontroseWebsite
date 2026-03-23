@@ -1,16 +1,17 @@
 import { Link } from "wouter";
-import { Building2, Mail, Phone, Linkedin, MapPin } from "lucide-react";
+import { Mail, Phone, Linkedin, MapPin } from "lucide-react";
 import { COMPANY, CONTACT, ADDRESS, SOCIALS } from "@/lib/constants";
+import logo from "@/assets/montrose-icon.png";
 
 export default function Footer() {
   return (
-    <footer className="bg-[hsl(210_10%_25%)] text-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
-      <div className="max-w-7xl mx-auto px-4 md:px-8 py-16">
+    <footer className="bg-[hsl(80_6%_22%)] text-gray-200 shadow-[0_-4px_12px_rgba(0,0,0,0.08)]">
+      <div className="max-w-7xl mx-auto p-4 md:p-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Company Info */}
           <div className="md:col-span-1">
-            <div className="flex items-center gap-2 mb-4">
-              <Building2 className="h-6 w-6 text-primary" />
+            <div className="flex items-center gap-1.5 mb-4">
+              <img src={logo} alt={COMPANY.name} className="h-8 w-auto brightness-0 invert" />
               <span className="text-xl font-bold text-white">{COMPANY.name}</span>
             </div>
             <p className="text-sm text-gray-400 leading-relaxed mb-6">

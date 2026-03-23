@@ -5,7 +5,7 @@ interface PageHeaderProps {
 
 export default function PageHeader({ title, subtitle }: PageHeaderProps) {
   return (
-    <section className="py-16 md:py-20 bg-[hsl(210_10%_25%)] text-white">
+    <section className="py-16 md:py-20 bg-[hsl(80_6%_22%)] text-white">
       <div className="max-w-4xl mx-auto px-4 md:px-8 text-center">
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-4">
           {title}

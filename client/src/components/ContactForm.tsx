@@ -93,7 +93,7 @@ export default function ContactForm() {
                 name="name"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Name</FormLabel>
+                    <FormLabel className="flex items-center gap-1">Name<span className="text-red-500">*</span></FormLabel>
                     <FormControl>
                       <Input placeholder="John Doe" {...field} data-testid="input-name" />
                     </FormControl>
@@ -106,7 +106,7 @@ export default function ContactForm() {
                 name="company"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Company</FormLabel>
+                    <FormLabel className="flex items-center gap-1">Company<span className="text-red-500">*</span></FormLabel>
                     <FormControl>
                       <Input placeholder="Your Company" {...field} data-testid="input-company" />
                     </FormControl>
@@ -122,7 +122,7 @@ export default function ContactForm() {
                 name="email"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Email</FormLabel>
+                    <FormLabel className="flex items-center gap-1">Email<span className="text-red-500">*</span></FormLabel>
                     <FormControl>
                       <Input
                         type="email"
@@ -140,7 +140,7 @@ export default function ContactForm() {
                 name="phone"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>Phone</FormLabel>
+                    <FormLabel className="flex items-center gap-1">Phone<span className="text-red-500">*</span></FormLabel>
                     <FormControl>
                       <Input placeholder="(555) 123-4567" {...field} data-testid="input-phone" />
                     </FormControl>
@@ -155,7 +155,7 @@ export default function ContactForm() {
               name="subject"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Subject</FormLabel>
+                  <FormLabel className="flex items-center gap-1">Subject<span className="text-red-500">*</span></FormLabel>
                   <FormControl>
                     <Input
                       placeholder="Project inquiry, partnership opportunity, etc."
@@ -173,7 +173,7 @@ export default function ContactForm() {
               name="message"
               render={({ field }) => (
                 <FormItem>
-                  <FormLabel>Message</FormLabel>
+                  <FormLabel className="flex items-center gap-1">Message<span className="text-red-500">*</span></FormLabel>
                   <FormControl>
                     <Textarea
                       placeholder="Tell us about your project or inquiry..."

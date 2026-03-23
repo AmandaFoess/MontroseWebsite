@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { COMPANY } from "@/lib/constants";
+import logo from "@/assets/montrose-icon.png";
 
 export default function Navigation() {
   const [location] = useLocation();
@@ -22,9 +23,10 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" data-testid="link-home">
-            <span className="text-2xl font-bold text-primary tracking-tight">
-              {COMPANY.name}
-            </span>
+            <div className="flex items-center gap-1.5">
+              <img src={logo} alt={COMPANY.name} className="h-8 md:h-9 w-auto" />
+              <span className="text-xl md:text-2xl font-bold tracking-tight">{COMPANY.name}</span>
+            </div>
           </Link>
 
           {/* Desktop Navigation */}
