@@ -11,7 +11,7 @@ const SITE_URL = "https://themontroseteam.com";
 export default function SEOHead({ title, description, canonicalPath }: SEOHeadProps) {
   const fullTitle =
     canonicalPath === "/"
-      ? "Montrose | Land Development & Real Estate Solutions | Charlotte, NC"
+      ? "Montrose | Land Development Solutions | Charlotte, NC"
       : `${title} | Montrose`;
   const canonicalUrl = `${SITE_URL}${canonicalPath}`;
   const ogImage = `${SITE_URL}/og-image.jpg`;
