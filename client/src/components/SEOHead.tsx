@@ -6,7 +6,7 @@ interface SEOHeadProps {
   canonicalPath: string;
 }
 
-const SITE_URL = "https://themontroseteam.com";
+const SITE_URL = "https://www.themontroseteam.com";
 
 export default function SEOHead({ title, description, canonicalPath }: SEOHeadProps) {
   const fullTitle =
@@ -26,6 +26,9 @@ export default function SEOHead({ title, description, canonicalPath }: SEOHeadPr
       <meta property="og:description" content={description} />
       <meta property="og:url" content={canonicalUrl} />
       <meta property="og:image" content={ogImage} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image:type" content="image/jpeg" />
       <meta property="og:type" content="website" />
       <meta property="og:site_name" content="Montrose" />
       <meta property="og:locale" content="en_US" />
