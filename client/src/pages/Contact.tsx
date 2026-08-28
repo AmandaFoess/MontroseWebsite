@@ -9,7 +9,7 @@ export default function Contact() {
     <div>
       <SEOHead
         title="Contact Montrose | Land Development Charlotte NC"
-        description="Contact Montrose for land development and real estate development services in Charlotte, NC. Office located in Huntersville, NC. Call (980) 828-6096 or email info@themontroseteam.com."
+        description="Contact Montrose for land development and real estate development services in Charlotte, NC. Office located in Huntersville, NC. Call (704) 828-6096 or email info@themontroseteam.com."
         canonicalPath="/contact"
       />
       <section className="py-12 md:py-16">

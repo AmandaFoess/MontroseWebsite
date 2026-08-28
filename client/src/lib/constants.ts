@@ -7,8 +7,8 @@ export const COMPANY = {
 
 export const CONTACT = {
   email: "info@themontroseteam.com",
-  phone: "(980) 828-6096",
-  phoneHref: "tel:+19808286096",
+  phone: "(704) 828-6096",
+  phoneHref: "tel:+17048286096",
 } as const;
 
 export const ADDRESS = {
