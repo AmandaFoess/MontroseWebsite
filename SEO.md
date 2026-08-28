@@ -18,7 +18,7 @@ Each page has unique title, description, canonical URL, Open Graph, and Twitter 
 | Home (`/`) | Montrose \| Land Development & Real Estate Solutions \| Charlotte, NC | Montrose is a full-cycle land development firm in Huntersville, NC serving the Charlotte area. From land acquisition to construction closeout, we deliver high-performing real estate development projects. |
 | Services (`/services`) | Land Development Services \| Site Development Charlotte NC \| Montrose | Comprehensive land development services in Charlotte, NC including land acquisition, site evaluation, rezoning, design & permitting, pre-construction, and site construction. Serving Huntersville and the greater Charlotte area. |
 | About (`/about`) | About Montrose \| Land Development Company \| Huntersville, NC | Founded in 2013, Montrose is a trusted land development company in Huntersville, NC. We partner with clients to deliver innovative, data-driven real estate development solutions across the Charlotte region. |
-| Contact (`/contact`) | Contact Montrose \| Land Development Charlotte NC | Contact Montrose for land development and real estate development services in Charlotte, NC. Office located in Huntersville, NC. Call (980) 828-6096 or email info@themontroseteam.com. |
+| Contact (`/contact`) | Contact Montrose \| Land Development Charlotte NC | Contact Montrose for land development and real estate development services in Charlotte, NC. Office located in Huntersville, NC. Call (704) 828-6096 or email info@themontroseteam.com. |
 
 ### Structured Data (JSON-LD)
 `StructuredData` component in `App.tsx` injects LocalBusiness schema on every page:
